@@ -1,0 +1,15 @@
+.pytest_cache/
+*_venv/
+venv_*/
+venv/
+.idea/
+htmlcov/
+*.pyc
+build
+_static
+_templates
+
+# Coverage
+coverage.xml
+htmlcov
+.coverage

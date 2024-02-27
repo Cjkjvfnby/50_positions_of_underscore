@@ -1,0 +1,34 @@
+[tool.pytest.ini_options]
+addopts = [
+    "--doctest-modules",
+    "--doctest-continue-on-failure",
+    "--showlocals",
+]
+
+[tool.ruff]
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+    "ANN",
+    "D",
+    "T201",
+    "S101",
+    "DTZ005",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F401"]
+"tests/*" = ["D10", "D101", "D103", "S101", "ANN", "PLR2004"]
+'conf.py' = ["ALL"]
+'example\middle.py' = ["PLW0603"]
+'back.py' = ["ARG001"]
+'name_mangling_02.py' = ["N802"]
+
+
+[tool.ruff.lint.mccabe]
+max-complexity = 5
+
+[tool.ruff.format]
+line-ending = "native"
