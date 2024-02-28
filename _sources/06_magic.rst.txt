@@ -4,6 +4,10 @@ Double underscore at the start and end
 
 Methods that use it called magic or dundr (double underscore)
 
+.. image:: _static/py_hat.png
+   :width: 600
+
+
 Python specification
 --------------------
 Yes, this is part of Python specification
