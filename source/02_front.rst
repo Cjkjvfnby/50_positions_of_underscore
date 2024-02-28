@@ -18,23 +18,23 @@ Function, methods, classes, module level variables
 Indicate that this things are for internal use.
 
 - For libraries it's a good way to reduce maintenance cost.
+
   - When you change public method you are responsible for "fixing" it's usage.
   - When you change internal methods it's their problems, you should not care.
   - When you review public attributes, you should think about business (context where this class is used), if it works but  looks strange it's a valid reason for block the review. If internal method is working but look strange, this could be  refactored later.
-  - If you have strict rules about documenting supported by linters, you could save tme and not documenting internal things, linters respect leading underscore.
+  - If you have strict rules about documenting supported by linters, you could save time and not documenting internal things, linters respect leading underscore.
   - It's easy to keep module boundaries, linter will complain about violations.
 
 - For code that is not a library this is not so important, but still a good thing to have.
 
 Couple of simple rules:
- - always start from internal
- - when you need to make it public, thin if you really need it, and do it. This is a really simple refactoring that touches a single file.
-
+ - Always start from internal
+ - When you need to make it public, think if you really need it!, and do it. This is a really simple refactoring that touches a single file.
 
 
 Argument names
 --------------
-Argument is not used, this might be useful when you implement some interface or work with external code
+Argument is not used, this might be useful when you implement some interface or work with external code.
 Linting tools do not complain on such unused variables.
 
 

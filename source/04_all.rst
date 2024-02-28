@@ -2,6 +2,10 @@ All
 ===
 The whole name is underscore[s]
 
+.. image:: _static/py_flat.png
+   :width: 600
+
+
 Python specification
 --------------------
 No
