@@ -480,15 +480,14 @@ _get was added to Boo without checking all non public methods.</p>
 </pre></div>
 </div>
 <p>This name is converted to the <cite>_&lt;class&gt;&lt;method&gt;</cite> in the instance dictionary and when you access it.
-Then current class is owner for the method.  When you call if from the Foo it foo, when you try to call it from Boo,
-if will try to get _Boo__get.</p>
+Then current class is an owner for the method.  When you call it from the <cite>Foo</cite> method it will be <cite>_Foo__get</cite>, when you try to call it from <cite>Boo</cite>,  it will try to access <cite>_Boo__get</cite>.</p>
 </section>
 <section id="convention">
 <h3>Convention<a class="headerlink" href="#convention" title="Link to this heading">#</a></h3>
-<p>If you class is meant to be inherited, use it!
+<p>If your class is meant to be inherited, use it!
 This is recommended way to avoid override thing by accident.
 It does not protect from calling it, you just need to use mangled name for that.</p>
-<p>There is not reason to use it for classes that are not used as parents, single underscore is enough.</p>
+<p>There is no reason to use it for classes that are not used as parents, single underscore is enough.</p>
 </section>
 <section id="example">
 <h3>Example<a class="headerlink" href="#example" title="Link to this heading">#</a></h3>

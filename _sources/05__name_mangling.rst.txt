@@ -38,18 +38,17 @@ __________________________
    :language: Python
 
 This name is converted to the `_<class><method>` in the instance dictionary and when you access it.
-Then current class is owner for the method.  When you call if from the Foo it foo, when you try to call it from Boo,
-if will try to get _Boo__get.
+Then current class is an owner for the method.  When you call it from the `Foo` method it will be `_Foo__get`, when you try to call it from `Boo`,  it will try to access `_Boo__get`.
 
 
 Convention
 __________
 
-If you class is meant to be inherited, use it!
+If your class is meant to be inherited, use it!
 This is recommended way to avoid override thing by accident.
 It does not protect from calling it, you just need to use mangled name for that.
 
-There is not reason to use it for classes that are not used as parents, single underscore is enough.
+There is no reason to use it for classes that are not used as parents, single underscore is enough.
 
 
 Example

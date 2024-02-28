@@ -15,7 +15,7 @@ Yes, this is part of Python specification
 Convention
 __________
 
-Thing twice before adding own one. This might be confusing.
+Think twice before adding an own one. This might be confusing.
 
 You should not call this methods directly outside of the method.
 
