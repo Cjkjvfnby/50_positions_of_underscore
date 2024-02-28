@@ -2,6 +2,9 @@ Front
 ======
 Also know as leading underscore.  This case is focused on a single leading underscore. Double will be covered later.
 
+.. image:: _static/py_private.png
+   :width: 600
+
 Python specification
 --------------------
 Weak “internal use” indicator. E.g. from M import * does not import objects whose names start with an underscore.

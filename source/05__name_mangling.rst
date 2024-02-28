@@ -2,6 +2,9 @@ Name mangling
 =============
 Double underscore before the method name.
 
+.. image:: _static/py_learn.png
+   :width: 600
+
 Python specification
 --------------------
 Yes
